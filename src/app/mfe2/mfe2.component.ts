@@ -12,6 +12,6 @@ import { LoadMfeService } from '../load-mfe.service';
 })
 export class Mfe2Component {
   constructor(private loadMfeService: LoadMfeService) {
-    this.loadMfeService.loadScript('https://testeangular.azurewebsites.net/main.js');
+    this.loadMfeService.loadScript('https://cso-poc-mife.dev.appshellbox.com/main.js');
   }
 }
