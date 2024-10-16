@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 import { Router, RouterEvent, RouterLink, RouterLinkActive, RouterModule, RouterOutlet } from '@angular/router';
-import { AuthLibService } from 'auth-lib-by-breno-ridolfi';
 
 @Component({
   selector: 'app-root',
@@ -12,10 +11,6 @@ import { AuthLibService } from 'auth-lib-by-breno-ridolfi';
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppComponent implements OnInit {
-  
-  constructor(private service: AuthLibService) {
-    service.login('Breno','xx');
-  }
   
 
   ngOnInit(): void {
